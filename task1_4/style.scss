@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 50vh;
+  width: 50%;
+  &__ball {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    animation: eating-ball 0.5s linear infinite;
+  }
+  &__ball::before {
+    content: "";
+    background-color: #fff;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+  }
+  @keyframes eating-ball {
+    0% {
+      transform: translateX(50%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+.pacman {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    display: block;
+    border-radius: 50%;
+    height: 0px;
+    width: 0px;
+  }
+  &::before {
+    animation: chunk-top 0.5s ease infinite;
+    border: 35px solid #f2682a;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+  }
+  @keyframes chunk-top {
+    0%,
+    100% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(-80deg);
+    }
+  }
+  &::after {
+    animation: chunk-bottom 0.5s ease infinite;
+    border: 35px solid #f2682a;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  @keyframes chunk-bottom {
+    0%,
+    100% {
+      transform: rotate(-40deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+  &__tail {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 50px;
+    transform: rotate(30deg);
+    animation: wiggle 1s infinite ease-in-out;
+  }
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-20deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+  &__ears {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 30px;
+  }
+}
