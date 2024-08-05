@@ -1,0 +1,127 @@
+.background {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(
+    rgba(255, 85, 0, 0.2),
+    rgba(255, 102, 0, 0.1),
+    rgba(255, 106, 0, 0.1),
+    rgba(255, 255, 255, 0.2)
+  );
+  z-index: 1;
+}
+.header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  max-height: 500px;
+  z-index: 2;
+  overflow: hidden;
+}
+.menu {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  transition: position 0.5s ease;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
+  &__img {
+    max-width: 128px;
+    height: auto;
+  }
+  cursor: pointer;
+}
+.items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  max-width: 100%;
+  width: 100%;
+  top: -100%;
+  opacity: 0;
+}
+.cross__img {
+  max-width: 15px;
+  width: 100%;
+}
+.item,
+.cross {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  max-width: 100%;
+  width: 100%;
+  font-size: 31px;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: #cc5520;
+  color: white;
+  cursor: pointer;
+}
+#menu:checked ~ .items {
+  top: 100px;
+  backdrop-filter: blur(8px);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@media (min-width: 900px) {
+  .header {
+    flex-direction: row;
+    max-height: 100px;
+    z-index: 1;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .logo {
+    max-width: 128px;
+    width: 100%;
+    max-height: 100px;
+    cursor: auto;
+  }
+  .items {
+    max-width: 330px;
+    max-height: 100px;
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    align-items: start;
+    opacity: 1;
+    .item:hover {
+      background-color: transparent;
+      color: black;
+    }
+  }
+  #menu:checked ~ .items {
+    backdrop-filter: blur(0px);
+    top: 0;
+  }
+  .item {
+    max-height: 100px;
+    font-size: 18px;
+  }
+  .cross,
+  .blur {
+    display: none;
+  }
+}

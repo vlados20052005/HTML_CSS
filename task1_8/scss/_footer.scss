@@ -1,0 +1,150 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #cc5520;
+  color: white;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+      font-size: 25px;
+      font-weight: 700;
+      margin: 40px 0 50px 0;
+    }
+
+    &__section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 28px;
+      border-bottom: 2.66px solid white;
+      padding-bottom: 5px;
+    }
+
+    &__item {
+      margin-top: 22px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    &__newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 355px;
+      margin-top: 25px;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__input,
+    &__button {
+      height: 50px;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+    }
+
+    &__input {
+      padding-left: 30px;
+      margin: 9px 0 11px 0;
+    }
+
+    &__button {
+      color: #cc5520;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 218px;
+
+    &-up {
+      margin: 32.5px 0;
+    }
+
+    &-bottom {
+      display: none;
+    }
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    height: 56.4px;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+}
+
+/* Media Queries */
+@media (min-width: 1080px) {
+  .footer {
+    &__menu {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1440px;
+      margin-top: 50px;
+
+      &__logo {
+        margin: 0 0 0 20px;
+      }
+
+      &__newsletter {
+        margin: 0 20px 0 0;
+      }
+    }
+
+    &__copyright {
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1440px;
+      &__text {
+        margin: 0 0 0 20px;
+      }
+    }
+
+    &__socials {
+      &-up {
+        display: none;
+      }
+
+      &-bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 218px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

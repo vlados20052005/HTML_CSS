@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/styles.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="header">
+      <div class="menu">
+        <input type="checkbox" id="menu" style="display: none" />
+        <label class="logo" for="menu">
+          <img src="./assets/logo.png" alt="logo" class="logo__img" />
+        </label>
+        <div class="items">
+          <a class="item">Home</a>
+          <a class="item">About</a>
+          <a class="item">Contact Us</a>
+          <label class="cross" for="menu">
+            <img
+              src="./assets/icons/cross.png"
+              alt="cross"
+              class="cross__img"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="intro">
+        <div class="intro__left">
+          <div class="intro__left__title">New E-commerce App best for You</div>
+          <div class="intro__left__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sed
+            vulputate vitae velit dictum cursus amet. Turpis donec ut velit
+            quis. Cursus commodo, eget urna, sapien amet.
+          </div>
+          <div class="intro__left__download">
+            <div class="black-play">
+              <img
+                src="./assets/playMarket.png"
+                alt="playMarket"
+                class="black-play__img"
+              />
+            </div>
+            <div class="black-app">
+              <img src="./assets/appStore.png" alt="" class="black-app__img" />
+            </div>
+          </div>
+        </div>
+        <div class="intro__right">
+          <img
+            src="./assets/mobiles2.png"
+            alt=""
+            class="intro__right__mobile"
+          />
+          <div class="intro__right__download">
+            <div class="red-play">
+              <img src="./assets/playMarket.png" alt="" class="red-play__img" />
+            </div>
+            <div class="red-app">
+              <img src="./assets/appStore.png" alt="" class="red-app__img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services">
+        <div class="services__title">
+          What we do to help our customers in digital era.
+        </div>
+        <div class="cards">
+          <div class="card first-card">
+            <img class="card__send" src="./assets/foxSend.png" alt="" />
+            <div class="card__info">
+              <div class="card__info__title">Send</div>
+              <div class="card__info__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="learn-more">
+              Learn more
+              <img src="./assets/icons/arrow.png" alt="arrow" class="arrow" />
+            </div>
+          </div>
+          <div class="card second-card">
+            <img class="card__receive" src="./assets/foxReceive.png" alt="" />
+            <div class="card__info">
+              <div class="card__info__title">Receive</div>
+              <div class="card__info__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="learn-more">
+              Learn more
+              <img src="./assets/icons/arrow.png" alt="arrow" class="arrow" />
+            </div>
+          </div>
+          <div class="card third-card">
+            <img class="card__buy" src="./assets/foxBuy.png" alt="" />
+            <div class="card__info">
+              <div class="card__info__title">Buy</div>
+              <div class="card__info__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="learn-more">
+              Learn more
+              <img src="./assets/icons/arrow.png" alt="arrow" class="arrow" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="instruction">
+        <div class="instruction__title">How it works</div>
+        <div class="instruction__items">
+          <div class="instruction__items__item">
+            <img src="./assets/icons/create.png" class="item__img" />
+            <div class="punkt">Create an account</div>
+            <div class="item__text">
+              Lorem ipsum dolor sit amet, consecteteu.
+            </div>
+          </div>
+          <div class="instruction__items__item">
+            <img src="./assets/icons/get.png" class="item__img" />
+            <div class="punkt">Get authorization</div>
+            <div class="item__text">
+              Lorem ipsum dolor sit amet, consecteteu.
+            </div>
+          </div>
+          <div class="instruction__items__item">
+            <img src="./assets/icons/enjoy.png" class="item__img" />
+            <div class="punkt">Enjoy the app</div>
+            <div class="item__text">
+              Lorem ipsum dolor sit amet, consecteteu.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fox-say">
+        <div class="fox-say__title">What the fox say</div>
+        <div class="fox-say__image">
+          <img src="./assets/fox.png" alt="fox" class="fox-say__image__fox" />
+          <div class="fox-say__image__back"></div>
+        </div>
+        <input
+          style="display: none"
+          type="radio"
+          name="carousel"
+          id="slide1"
+          checked
+        />
+        <input style="display: none" type="radio" name="carousel" id="slide2" />
+        <div class="carousel">
+          <input
+            type="radio"
+            name="carousel"
+            id="carousel-1"
+            checked
+            style="display: none"
+          />
+          <input
+            type="radio"
+            name="carousel"
+            id="carousel-2"
+            style="display: none"
+          />
+          <div class="carousel-wrapper">
+            <div class="carousel-item" id="item-1">
+              <img
+                src="./assets/icons/comas.png"
+                alt=""
+                class="carousel-item__img"
+              />
+              <p class="carousel-item__text">
+                Amet in elementum nulla scelerisque dui, egestas at. Elit
+                consectetur turpis elementum amet vitae et etiam nec. Varius
+                volutpat hac adipiscing tincidunt pretium.
+              </p>
+              <h2 style="margin: 0 0 20px 0; font-size: 18px">Foxy</h2>
+            </div>
+            <div class="carousel-item" id="item-2">
+              <img
+                src="./assets/icons/comas.png"
+                alt=""
+                class="carousel-item__img"
+              />
+              <p>
+                Amet in elementum nulla scelerisque dui, egestas at. Elit
+                consectetur turpis elementum amet vitae et etiam nec. Varius
+                volutpat hac adipiscing tincidunt pretium.
+              </p>
+              <h2 style="margin: 0 0 20px 0; font-size: 18px">Foxy</h2>
+            </div>
+          </div>
+          <div class="carousel-arrows">
+            <label for="" class="carousel-arrow prev" id="prev-1"
+              ><i class="gg-chevron-left"></i
+            ></label>
+            <label for="carousel-2" class="carousel-arrow next" id="next-1"
+              ><i class="gg-chevron-right"></i
+            ></label>
+            <label for="carousel-1" class="carousel-arrow prev" id="prev-2"
+              ><i class="gg-chevron-left"></i
+            ></label>
+            <label for="" class="carousel-arrow next" id="next-2"
+              ><i class="gg-chevron-right"></i
+            ></label>
+          </div>
+        </div>
+      </div>
+      <div class="download">
+        <img
+          src="./assets/mobiles3.png"
+          alt="mobiles"
+          class="download__mobiles"
+        />
+        <div class="download__app">
+          <div class="download__app__title">Download app to enjoy more!</div>
+          <div class="download__app__text">
+            Amet in elementum nulla scelerisque dui, egestas at. Elit
+            consectetur turpis elementum amet vitae et etiam nec. Varius
+            volutpat hac adipiscing tincidunt pretium.
+          </div>
+          <div class="download__app__btns">
+            <div class="black-play">
+              <img
+                src="./assets/playMarket.png"
+                alt="playMarket"
+                class="black-play__img"
+              />
+            </div>
+            <div class="black-app">
+              <img src="./assets/appStore.png" alt="" class="black-app__img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__menu">
+          <div class="footer__menu__logo">foxminded</div>
+
+          <div class="footer__menu__section">
+            <div class="footer__menu__title">Quick Links</div>
+            <div class="footer__menu__item">Sign Up</div>
+            <div class="footer__menu__item">About Us</div>
+          </div>
+
+          <div class="footer__menu__section">
+            <div class="footer__menu__title">Others</div>
+            <div class="footer__menu__item">User FAQs</div>
+            <div class="footer__menu__item">Contact Us</div>
+            <div class="footer__menu__item">Legal</div>
+            <div class="footer__menu__item">Privacy Policy</div>
+            <div class="footer__menu__item">Terms and Conditions</div>
+          </div>
+
+          <div class="footer__menu__section">
+            <div class="footer__menu__title">Products</div>
+            <div class="footer__menu__item">Send</div>
+            <div class="footer__menu__item">Receive</div>
+            <div class="footer__menu__item">Buy</div>
+          </div>
+
+          <div class="footer__menu__newsletter">
+            <div class="footer__menu__text">
+              Subscribe to our newsletter and be the first to know about our
+              updates
+            </div>
+            <div class="footer__menu__form">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="footer__menu__input"
+              />
+              <button class="footer__menu__button">Subscribe</button>
+            </div>
+          </div>
+          <div class="footer__socials footer__socials-up">
+            <img
+              src="./assets/icons/youtube.png"
+              alt="YouTube"
+              class="footer__icon"
+            />
+            <img
+              src="./assets/icons/instagram.png"
+              alt="Instagram"
+              class="footer__icon"
+            />
+            <img
+              src="./assets/icons/facebook.png"
+              alt="Facebook"
+              class="footer__icon"
+            />
+            <img
+              src="./assets/icons/twitter.png"
+              alt="Twitter"
+              class="footer__icon"
+            />
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__copyright">
+          <div class="footer__copyright__text">
+            Foxminded © 2024. All rights reserved.
+          </div>
+          <div class="footer__menu__socials footer__socials-bottom">
+            <img
+              src="./assets/icons/youtube.png"
+              alt="YouTube"
+              class="footer__icon"
+            />
+            <img
+              src="./assets/icons/instagram.png"
+              alt="Instagram"
+              class="footer__icon"
+            />
+            <img
+              src="./assets/icons/facebook.png"
+              alt="Facebook"
+              class="footer__icon"
+            />
+            <img
+              src="./assets/icons/twitter.png"
+              alt="Twitter"
+              class="footer__icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

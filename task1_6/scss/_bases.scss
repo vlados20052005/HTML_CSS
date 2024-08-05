@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  margin: 0;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  margin: 20px 0;
+}
+h3 {
+  margin: 0;
+}
+ul {
+  padding-left: 19px;
+}
+code {
+  background-color: #c8c4c5;
+  font-weight: 700;
+}
+@media (max-width: 660px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
